@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0F1410;
+  color: #F4F7F2;
+}
+
+/* Explicit Responsive Device Sizes (Phone, Tablet, Laptop) */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+
+  /* Phone Size */
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+
+  /* Tablet Size */
+}
+
+@media (min-width: 1025px) {
+  html {
+    font-size: 16px;
+  }
+
+  /* Laptop / Desktop Size */
+}
+
+.font-heading {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F1410;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8C7355;
+  border-radius: 2px;
+}
